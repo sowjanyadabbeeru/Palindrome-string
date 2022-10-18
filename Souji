@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+char str[100];
+int len,i,flag=0;
+scanf("%s",str);
+len=strlen(str);
+for(i=0;i<len/2;i++)
+{
+    if(str[i]!=str[len-i-1])
+    flag++;
+}
+(flag==0)?printf("YES"):printf("NO");
+}
